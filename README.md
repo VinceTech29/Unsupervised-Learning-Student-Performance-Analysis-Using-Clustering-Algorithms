@@ -4,15 +4,15 @@ An end-to-end unsupervised machine learning project analyzing student academic b
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Understanding student learning dynamics is crucial for educational institutions seeking to improve retention rates, allocate teaching resources efficiently, and offer personalized interventions. This project investigates student performance across multidimensional behavioral and academic metrics—including **Study Hours**, **Examination Scores**, and **Class Attendance**—to uncover natural groupings without relying on predefined labels.
 
-By applying both partitioning, fuzzy, probabilistic, and hierarchical paradigms, the project compares how different mathematical assumptions capture student cohorts and translates machine learning findings into concrete, actionable institutional strategies.
+By applying partitioning, fuzzy, probabilistic, and hierarchical paradigms, the project compares how different mathematical assumptions capture student cohorts and translates machine learning findings into concrete, actionable institutional strategies.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 1. **Unsupervised Cohort Discovery**: Segment a cohort of 14,003 students based on key academic performance metrics.
 2. **Multi-Algorithm Comparative Analysis**: Implement and evaluate four fundamental clustering algorithms on identical academic data:
@@ -21,11 +21,11 @@ By applying both partitioning, fuzzy, probabilistic, and hierarchical paradigms,
    - Probabilistic Clustering: **Gaussian Mixture Models (GMM)**
    - Connectivity Clustering: **Hierarchical Agglomerative Clustering**
 3. **Multi-Resolution Hierarchy**: Utilize dendrogram visualization to determine optimal structural divisions (confirming 3 natural macro-clusters at distance threshold $y = 600$).
-4. **Actionable Business & Educational Interventions**: Provide at least two strategic institutional decisions per cluster to drive retention, honors incubation, and early-warning alerts.
+4. **Actionable Business and Educational Interventions**: Provide at least two strategic institutional decisions per cluster to drive retention, honors incubation, and early-warning alerts.
 
 ---
 
-## 📊 Dataset Description
+## Dataset Description
 
 The analysis is conducted on the comprehensive **Student Performance Dataset** (`student_performance.csv`) containing records for **14,003 students** across **16 academic, behavioral, and demographic features**:
 
@@ -54,18 +54,18 @@ The analysis is conducted on the comprehensive **Student Performance Dataset** (
 
 ---
 
-## 🛠️ Technologies & Libraries
+## Technologies and Libraries
 
 - **Language**: Python 3.10+ / 3.11 / 3.12 / 3.13
 - **Data Manipulation**: `pandas`, `numpy`
-- **Scientific & Statistical Computing**: `scipy`
-- **Machine Learning & Modeling**: `scikit-learn`, `scikit-fuzzy`
+- **Scientific and Statistical Computing**: `scipy`
+- **Machine Learning and Modeling**: `scikit-learn`, `scikit-fuzzy`
 - **Data Visualization**: `matplotlib`, `seaborn`
 - **Environment**: Visual Studio Code (VS Code), Jupyter Notebooks
 
 ---
 
-## 🔬 Clustering Algorithms Implemented
+## Clustering Algorithms Implemented
 
 ### 1. K-Means Clustering (`01_KMeans_Clustering.ipynb`)
 - **Type**: Centroid-based hard partitioning.
@@ -100,7 +100,7 @@ The analysis is conducted on the comprehensive **Student Performance Dataset** (
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Student-Performance-Clustering-Analysis/
@@ -138,12 +138,12 @@ Student-Performance-Clustering-Analysis/
 
 ---
 
-## 🚀 Setup & Installation
+## Setup and Installation
 
 ### Step 1: Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/Student-Performance-Clustering-Analysis.git
-cd Student-Performance-Clustering-Analysis
+git clone https://github.com/VinceTech29/Unsupervised-Learning-Student-Performance-Analysis-Using-Clustering-Algorithms.git
+cd Unsupervised-Learning-Student-Performance-Analysis-Using-Clustering-Algorithms
 ```
 
 ### Step 2: Create and Activate a Virtual Environment
@@ -165,7 +165,7 @@ pip install -r requirements.txt
 
 ---
 
-## 💻 Running the Project in VS Code
+## Running the Project in VS Code
 
 1. **Open the Project in VS Code**:
    ```bash
@@ -182,7 +182,7 @@ pip install -r requirements.txt
 
 ---
 
-## 💡 Key Findings
+## Key Findings
 
 1. **Study Hours Independence**: Across all four algorithms, mean study hours hover uniformly between **19.8 and 20.1 hours/week**, indicating that sheer study volume does not guarantee academic success. Study methodology, foundational mastery, and engagement are the true differentiators.
 2. **Fuzzy Transitions Over Rigid Boundaries**: Fuzzy C-Means demonstrates that ~33% of students reside in borderline capability zones ($u_i \approx 0.45 - 0.55$), proving that soft clustering provides more nuanced metrics for academic progression.
@@ -191,14 +191,14 @@ pip install -r requirements.txt
 
 ---
 
-## 📄 Documentation Links
+## Documentation Links
 
 - Detailed cluster breakdowns: [Cluster_Interpretations.md](documentation/Cluster_Interpretations.md)
 - Strategic institutional interventions: [Business_Decisions.md](documentation/Business_Decisions.md)
-- Comprehensive mathematical & algorithmic comparison: [Clustering_Comparison.md](documentation/Clustering_Comparison.md)
+- Comprehensive mathematical and algorithmic comparison: [Clustering_Comparison.md](documentation/Clustering_Comparison.md)
 
 ---
 
-## 📜 License & Acknowledgments
+## License and Acknowledgments
 
 This project is prepared for educational and research analysis into unsupervised learning methodologies in academic performance analytics. Feel free to use and extend this codebase for academic research and institutional planning.
